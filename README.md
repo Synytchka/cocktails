@@ -39,6 +39,16 @@ This is a web application that utilizes the CocktailDB API to provide informatio
 
 The application will be available at http://localhost:3000.
 
+## Screenshots
+
+![Homepage](docs/screenshots/homepage.png)
+*Homepage*
+
+![Cocktail](docs/screenshots/cocktail1.png)
+![Cocktail](docs/screenshots/cocktail2.png)
+*Cocktail Details*
+
+
 ## Contributing
 
 Feel free to open issues or submit pull requests to improve the application. Contributions are welcome!
