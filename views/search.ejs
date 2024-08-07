@@ -1,0 +1,17 @@
+<%- include("partials/header.ejs") %>
+
+    <main class="py-0">
+       <div class="result">
+            <% if (locals.cocktailName) { %> 
+                <h1 class="title my-5">Search Results for "<%= cocktailName %>"</h1>
+            <% } else { %>
+                <h1 class="title my-5">Search Results</h1>
+            <% } %>
+            <% drinks.forEach(drink => { %>
+                <p class="body-text"><a class="search-link" href="/cocktail?id=<%= drink.idDrink %>"><%= drink.strDrink %></a></p>
+            <% }); %>
+        </div>
+       </div>
+    </main>
+
+<%- include("partials/footer.ejs") %>

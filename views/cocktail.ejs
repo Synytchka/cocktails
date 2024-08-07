@@ -1,0 +1,20 @@
+<%- include("partials/header.ejs") %>
+
+    <main class="py-0">
+       <div class="result">
+            <h1 class="title cocktail-name"><%= cocktailName %></h1>
+            <p class="body-text tag one me-5"><%= glass %></p>
+            <p class="body-text tag two ms-5"><%= alcoholic %></p>
+            <img class="my-5" src=<%= image %> alt="cocktail photo">
+            <div class="recipe">
+                <h2 class="title cocktail-name">Ingredients</h2>
+                <% ingredients.forEach(ingredient => { %>
+                        <p class="body-text"><%= ingredient %></p>
+                    <% }) %>
+            <h2 class="title cocktail-name">Instructions</h2>
+            <p class="body-text mb-4"><%= instructions %></p>
+        </div>
+       </div>
+    </main>
+
+<%- include("partials/footer.ejs") %>
